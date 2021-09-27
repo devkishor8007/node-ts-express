@@ -17,7 +17,7 @@ app.put('/:id', function (req, res) {
 app.delete('/:id', function (req, res) {
     return res.status(200).json({ success: true, msg: "delete successfully" });
 });
-var PORT = process.env.PORT || 5000;
+var PORT = 5000;
 app.listen(PORT, function () {
-    console.log("server start at " + PORT);
+    console.log("server start at PORT " + PORT);
 });
